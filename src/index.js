@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import thunk from 'redux-thunk';
 
 /**
  * Import the stylesheet you want used! Here we just reference
@@ -18,6 +19,6 @@ import { Root } from './containers/Root';
 const store = configureStore();
 
 ReactDOM.render(
-  <Root store={store} />,
-  document.getElementById('root')
+    <Root store={store}/>,
+    document.getElementById('root')
 );
