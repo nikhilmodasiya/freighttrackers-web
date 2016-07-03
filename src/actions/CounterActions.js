@@ -1,7 +1,10 @@
 import { INCREMENT_COUNTER, DECREMENT_COUNTER, SAVE_FORM } from '../constants/ActionTypes';
 
 export function saveForm(formDTO) {
+    console.log("formDTO");
     console.log(formDTO);
+    console.log("formDTO");
+
     return (dispatch) => {
         fetch('http://52.196.18.103:3000/api/Shippers/signup', {
             method: 'POST',
@@ -12,7 +15,9 @@ export function saveForm(formDTO) {
             body: JSON.stringify({
                 formDTO
             })
-        }).then(response => {
+        }).then(response => response.json())
+        .then(response =>{
+            console.log("response");
             console.log(response);
         }).catch(err => {
             console.log(err);
