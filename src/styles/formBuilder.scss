@@ -1,0 +1,28 @@
+.formBody {
+  display: flex;
+  width: 100%;
+}
+
+.formRow {
+  display: flex;
+  width: 100%;
+}
+
+.formColumnWrapper {
+  padding: 3rem 0 0 0;
+}
+
+.formFieldTitle {
+  font-weight: bold;
+  //Todo : change this to constants
+  color: black;
+}
+
+.formFieldWrapper {
+  display: flex;
+}
+
+.formInputCommon {
+  margin-top: 0.2rem;
+}
+
